@@ -19,7 +19,7 @@ config:
   ## All of these values are only used when mysql.enabled is set to false
     externalDatabase:
       user: "snipeit"
-      pass: ""
+      pass: 
       name: db-snipeit
       host: mysql
       port: 3306
@@ -28,7 +28,7 @@ config:
     env: production
     debug: false
     url: http://example.local
-    key: ""
+    key: 
     timezone: Europe/Berlin
     locale: en
 
@@ -38,7 +38,7 @@ mysql:
   ## Create a database and a database user
   ##
   mysqlUser: snipeit
-  mysqlPassword: ""
+  mysqlPassword: 
   mysqlDatabase: db-snipeit
 
   persistence:
@@ -58,7 +58,7 @@ persistence:
   enabled: true
   annotations: {}
   accessMode: ReadWriteOnce
-  existingClaim: ""
+  existingClaim: 
   ## database data Persistent Volume Storage Class
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
